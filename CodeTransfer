@@ -1,0 +1,35 @@
+void PianoRoll::humanizeNotesLen() { 
+    //length ver.
+    //The method will humanize position of a selection of notes
+    //First note is not changed.
+    if( ! hasValidPattern() )
+    {
+        return;
+    }
+    int lower = 1;//Humanize/span is 1..4/192 in size
+    int upper = 4;
+    int subt = 1; //shift between adding and subtracting position
+    int adder = 100;
+    bool firstDone = false; //make first note in collection untouched
+                            //Insures that no note can get a negative position 
+    // Use current time as seed for random generator
+    srand(time(0));
+    m_pattern->addJournalCheckPoint();
+    NoteVector notes = getSelectedNotes();//selected notes only
+    for( Note* n : notes )
+    {
+        if( firstDone ){ //==False, first note should not be moved
+        int rr = rand() % (upper - lower + 1) + lower;
+        int signer = rand() % (adder - subt + 1) + lower;
+        if ( signer < 50 ) n->setPos( n->pos() - rr );
+        else n->setPos( n->pos() + rr );
+        firstDone = true; //insures that note2..n is shufled
+        }
+    }
+    m_pattern->rearrangeAllNotes();
+    m_pattern->updateLength();
+    m_pattern->dataChanged();
+    update();//Project is changed. Update
+    gui->songEditor()->update();
+    Engine::getSong()->setModified();
+}
