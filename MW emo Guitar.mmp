@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!DOCTYPE lmms-project>
+<lmms-project version="1.0" creator="LMMS" type="song" creatorversion="1.2.1.714">
+  <head timesig_denominator="4" masterpitch="0" bpm="140" timesig_numerator="4" mastervol="100"/>
+  <song>
+    <trackcontainer minimized="0" y="5" width="1375" maximized="1" height="340" type="song" visible="1" x="5">
+      <track tab="3" minimized="0" y="245" width="284" name="TripleOscillator" maximized="0" height="480" solo="0" type="0" muted="0" visible="1" x="476">
+        <instrumenttrack pitchrange="1" pan="0" fxch="0" usemasterpitch="1" pitch="0" vol="25.2" basenote="45">
+          <instrument name="tripleoscillator">
+            <tripleoscillator finer0="0" vol0="33" userwavefile0="" modalgo1="2" finel0="0" coarse2="-24" finel1="0" userwavefile1="" stphdetun0="0" finer2="0" pan1="0" vol2="11" phoffset2="0" pan0="0" wavetype1="3" phoffset1="0" coarse0="0" userwavefile2="" modalgo2="2" coarse1="-12" stphdetun2="0" vol1="25" modalgo3="2" wavetype0="0" finer1="0" pan2="0" finel2="0" phoffset0="0" stphdetun1="0" wavetype2="5">
+              <key/>
+            </tripleoscillator>
+          </instrument>
+          <eldata fcut="3902" fwet="1" fres="9.38" ftype="0">
+            <elvol lspd_syncmode="0" lshp="0" ctlenvamt="0" sustain="0" lamt="0.065" hold="0" pdel="0" lspd_numerator="4" lspd="0.016" lpdel="0" dec="0.503" amt="1" att="0.024" rel="0.283" lspd_denominator="4" x100="0" latt="0" userwavefile=""/>
+            <elcut lspd_syncmode="5" lshp="5" ctlenvamt="1" sustain="0.5" lamt="1" hold="0.5" pdel="0" lspd_numerator="4" lspd="0.0107143" lpdel="0" dec="0.5" amt="0" att="0" rel="0.1" lspd_denominator="4" x100="0" latt="0" userwavefile=""/>
+            <elres lspd_syncmode="0" lshp="0" ctlenvamt="0" sustain="0.5" lamt="0" hold="0.5" pdel="0" lspd_numerator="4" lspd="0.1" lpdel="0" dec="0.5" amt="0" att="0" rel="0.1" lspd_denominator="4" x100="0" latt="0" userwavefile=""/>
+          </eldata>
+          <chordcreator chord="0" chordrange="1" chord-enabled="0"/>
+          <arpeggiator arpgate="100" arptime_syncmode="0" arp-enabled="0" arptime="100" arpcycle="0" arpmode="0" arptime_denominator="4" arp="0" arprange="1" arpmiss="0" arptime_numerator="4" arpskip="0" arpdir="0"/>
+          <midiport fixedoutputvelocity="-1" fixedinputvelocity="-1" readable="0" fixedoutputnote="-1" outputchannel="1" inputchannel="0" outputcontroller="0" writable="0" outputprogram="1" inputcontroller="0" basevelocity="63"/>
+          <fxchain enabled="1" numofeffects="2">
+            <effect autoquit_denominator="4" autoquit_numerator="4" autoquit="1" name="ladspaeffect" autoquit_syncmode="0" wet="1" on="1" gate="0">
+              <ladspacontrols ports="6" link="1">
+                <port01 link="1" data="2.88"/>
+                <port02 link="1" data="0.005"/>
+                <port03 link="1" data="1"/>
+                <port11 data="2.88"/>
+                <port12 data="0.005"/>
+                <port13 data="1"/>
+              </ladspacontrols>
+              <key>
+                <attribute value="caps" name="file"/>
+                <attribute value="AmpIII" name="plugin"/>
+              </key>
+            </effect>
+            <effect autoquit_denominator="4" autoquit_numerator="4" autoquit="1" name="ladspaeffect" autoquit_syncmode="0" wet="0.39" on="1" gate="0">
+              <ladspacontrols ports="4">
+                <port02 data="0.75544"/>
+                <port03 data="0.3745"/>
+                <port04 data="0.126187"/>
+                <port05 data="0.085"/>
+              </ladspacontrols>
+              <key>
+                <attribute value="caps" name="file"/>
+                <attribute value="Plate2x2" name="plugin"/>
+              </key>
+            </effect>
+          </fxchain>
+        </instrumenttrack>
+        <pattern name="TripleOscillator" pos="0" type="1" muted="0" steps="16">
+          <note pan="0" key="53" len="128" pos="0" vol="100"/>
+          <note pan="0" key="45" len="128" pos="0" vol="100"/>
+          <note pan="0" key="57" len="128" pos="8" vol="100"/>
+          <note pan="0" key="60" len="128" pos="16" vol="100"/>
+          <note pan="0" key="56" len="128" pos="192" vol="100"/>
+          <note pan="0" key="48" len="128" pos="192" vol="100"/>
+          <note pan="0" key="60" len="128" pos="200" vol="100"/>
+          <note pan="0" key="63" len="128" pos="208" vol="100"/>
+          <note pan="0" key="54" len="128" pos="384" vol="100"/>
+          <note pan="0" key="46" len="128" pos="384" vol="100"/>
+          <note pan="0" key="58" len="128" pos="392" vol="100"/>
+          <note pan="0" key="61" len="128" pos="400" vol="100"/>
+        </pattern>
+      </track>
+    </trackcontainer>
+    <track name="Automation track" solo="0" type="6" muted="0">
+      <automationtrack/>
+      <automationpattern mute="0" tens="1" name="Numerator" pos="0" len="192" prog="0"/>
+      <automationpattern mute="0" tens="1" name="Denominator" pos="0" len="192" prog="0"/>
+      <automationpattern mute="0" tens="1" name="Tempo" pos="0" len="192" prog="0"/>
+      <automationpattern mute="0" tens="1" name="Master volume" pos="0" len="192" prog="0"/>
+      <automationpattern mute="0" tens="1" name="Master pitch" pos="0" len="192" prog="0"/>
+    </track>
+    <fxmixer minimized="0" y="310" width="543" maximized="0" height="333" visible="1" x="5">
+      <fxchannel name="Master" soloed="0" volume="1" num="0" muted="0">
+        <fxchain enabled="1" numofeffects="1">
+          <effect autoquit_denominator="4" autoquit_numerator="4" autoquit="1" name="vsteffect" autoquit_syncmode="0" wet="1" on="1" gate="0">
+            <vsteffectcontrols plugin="SPAN.dll" guivisible="0" chunk="AAAAAAAAAAAAAAAAAAAAAGFibmveMgAAEQESBHic7VrLb9xEGJ/dJM0WUhq1qRpoqi7hwKPyNmnTULjYUIQUKQ2QEBCPi7s72bXqtRfbm5D2ikT/AjhUgHj8A5y5cOOGKnFG4oLUE+qfwMza48zY43lk10uFdiTH842/8fecGf++7BwAYAeGoeN79Tdt784UoufQtbbvr7/+Ftyz+250AdGn0OV4YWR7TWh4dhd+iAbwA7vfcvxG12/dsh2vwbBU0OOiax5dux7matXJJPLsHJblGz07sLthox34/d7gfeFv6MELeZk81qy8WoZerVLE1SmKuDZNEWszFHH9BEWsz1LEq/TrbxACi8Bvxi/E78HTZxNdzuRtdLz252i0LjMQ8RFRgLKO3x6b7B1Y7L2W3p9jNHI8o9mxPQ+6sT8PkJiXBJpl+XnxpulN2v/bxP/4vrGVRiAm0xjEZBqFmEzjEJNpJGLyxkmGfO2phJwekKsrT7P06hxLXz3F0teeYem10yx9fZ6l1wktSgWsItYL64LlY5lYzunEbQvZwKAkiFAS3EXjy+KQJJzF6ZJLC+XGJnA3RD0nCGUJTPjUE1i9sdsGspyYfw+Itw2KtQxPXWD0Cjv+gWG7Llku4QZ6/LJAu9yErI4VStaz6EKv2Hn3ja1Gx2lBowsjGIQG2mCj8AF6+GJOUiE7/e5aRk4Z/XOU7igaA1WM6LAHvwa8+HFZx60z7e+wB5uG0+35QWQ0fdcPHlRE/s6xZ3WfAdmWzUGyec9bMzkeFV7yTIW3psE7r8G7oMG7qMG7JOXF65IJRt9rwcC1D43BMfsN4K1LwYRx596ljP5R0O+STcPeb0dOF36PWAyhDZxJAjusMvrLAjtuu37zjhE6d+FPiGtF2ZSjecXWLFhl9EVRaTmhfdvVjEoyadzZtSSwY89x3W/R81eUjcAzxm3B8yILAviZ0XHanR8R0xV1M8i0Qlvu/2GV0a/LbHH9gx8QT0PPFDSrOCprVhl9UVTQeIwcL1V0opJOI7aQLzcaleGv7QTPVvNDU/mh6fzQTH7oRH5oNj9Uyw/RuhKFiBZENJFHCyG2ifYZfx8fSz29fSaZVJwPf5ll9EW7f2B7bThYb3q7/9E8njUPv/jKMC/+apbRF2V3rBVacnp7TjqNZ8vPfz+qmPsrZhl9kS0hbEIPH0t6tqTTxn0WiFYLUgpDB73VkkwqtqNmldG/KLLD9XvwO8RwWd0KPKXYhjNWGX1hXnV9P+ogIK6ZV2TauPNK9JWE80PvK+m/QLAYdQ+KvTsIQ0O/fssOUQe5EkPbJ6Lq+zsYSdUXH6qbcC89/fHhuo2OiOj/V/zN1gDk90nxd1L81WiT4q9qG1/x97FZWEC9yfWBtIDKvl9S7PwFjK3YSdtM6Vfw0UTz06WaRaq/JCsG7nLjpFgMrALGj4z+CkW8j8CQRTxW/iLjA7Xi26dg+OIbq8US432FopmeFzhFs0wUmL7okzSt+XwChi4VMToco8TzMRi2xMN64RilmXtaXuCWZqqUHvjC52H82VnNjWTnKZQ99DKFU/ZgffTIpPtq5Qq99cIvVxAtNnt/fnl49qFJ90WRSusFevnKLTMQHc727zdvupZJ90U6pDhfTwdueYCNBr3ji3fPBKHrZQMH1rPyNeE4xktDwHFW9jFgtKb/eTCa1aFu0X0Z/P0ADAN/RTv2eZDA1k3feBvtc/UNb/A6x/eeGOA6+bnS5OdKE8Q6Qaz8NkGsgp/8TBBr0o6NWPlxUkSsWT8qoNT3wEhRauxDNXT6Phg1Ol22ZFYnAFPPagVUipvoyy6FlTtg5GgU3+oy2QghbINRo1CZ1SmMbGpZXYg+aRqfcbshZNa3AsrUi7wUZf5jyvL9CCXq5bsYXZJ/XMsikMJDvbwTokryj2aZ7BQW6slWQJPyaCeAUC/aCigS/5Wix3fASNGj1M8E/mn6WY4a4yZDi1tglGgRt38BTwZGzQ==" program="0"/>
+            <key>
+              <attribute value="SPAN.dll" name="file"/>
+            </key>
+          </effect>
+        </fxchain>
+      </fxchannel>
+      <fxchannel name="Sf2 Player" soloed="0" volume="1" num="1" muted="0">
+        <fxchain enabled="0" numofeffects="0"/>
+        <send amount="1" channel="0"/>
+      </fxchannel>
+    </fxmixer>
+    <ControllerRackView minimized="0" y="310" width="350" maximized="0" height="200" visible="0" x="680"/>
+    <pianoroll minimized="0" y="316" width="860" maximized="1" height="480" visible="0" x="299"/>
+    <automationeditor minimized="0" y="1" width="860" maximized="0" height="400" visible="0" x="1"/>
+    <projectnotes minimized="0" y="279" width="686" maximized="0" height="400" visible="0" x="492"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:16pt;">Dato : </span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:16pt;">Genre:</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:16pt;">Key:</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:16pt;">Scale:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Verdana'; font-size:16pt;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Verdana'; font-size:16pt;"><br /></p></body></html>]]></projectnotes>
+    <timeline lp0pos="0" lp1pos="7296" lpstate="1"/>
+    <controllers/>
+  </song>
+</lmms-project>
